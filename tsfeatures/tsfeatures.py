@@ -21,7 +21,7 @@ from sklearn.linear_model import LinearRegression
 from itertools import groupby
 from arch import arch_model
 #from supersmoother import SuperSmoother
-from supsmu import supsmu
+#from supsmu import supsmu
 from functools import partial
 
 from tsfeatures.utils_ts import poly, embed, scalets
@@ -364,7 +364,7 @@ def stl_features(x, freq=None):
         deseas = np.array(x)
         t = np.arange(len(x))+1
         try:
-            trend0 = supsmu(t, deseas)
+            #trend0 = supsmu(t, deseas)
         except:
             output = {
                 'nperiods': nperiods,
