@@ -14,7 +14,7 @@ from statsmodels.tsa.ar_model import AR
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 from statsmodels.tsa.api import Holt
 
-from entropy import spectral_entropy
+#from entropy import spectral_entropy
 import multiprocessing as mp
 
 from sklearn.linear_model import LinearRegression
@@ -175,14 +175,14 @@ def hw_parameters(x, freq=None):
 
 # features
 
-def entropy(x, freq=None):
-    try:
-        # Maybe 100 can change
-        entropy = spectral_entropy(x, freq, method='welch', normalize=True)
-    except:
-        entropy = np.nan
+# def entropy(x, freq=None):
+#     try:
+#         # Maybe 100 can change
+#         entropy = spectral_entropy(x, freq, method='welch', normalize=True)
+#     except:
+#         entropy = np.nan
 
-    return {'entropy': entropy}
+#     return {'entropy': entropy}
 
 def count_entropy(x, freq=None):
     entropy = x[x>0]*np.log(x[x>0])
