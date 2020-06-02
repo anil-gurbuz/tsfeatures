@@ -498,6 +498,7 @@ def hurst(x, freq=None):
 
     return {'hurst': hurst_index}
 
+
 # Main functions
 def get_feats(index, ts, freq, scale=True,
               features = [acf_features, arch_stat, crossing_points,
