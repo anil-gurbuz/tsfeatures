@@ -364,7 +364,7 @@ def stl_features(x, freq=None):
         deseas = np.array(x)
         t = np.arange(len(x))+1
         try:
-            #trend0 = supsmu(t, deseas)
+          print("tried")#trend0 = supsmu(t, deseas)
         except:
             output = {
                 'nperiods': nperiods,
