@@ -501,7 +501,7 @@ def hurst(x, freq=None):
 # Main functions
 def get_feats(index, ts, freq, scale=True,
               features = [acf_features, arch_stat, crossing_points,
-                          entropy, flat_spots, heterogeneity, holt_parameters,
+                          flat_spots, heterogeneity, holt_parameters,
                           lumpiness, nonlinearity, pacf_features, stl_features,
                           stability, hw_parameters, unitroot_kpss, unitroot_pp,
                           series_length, hurst]):
@@ -525,7 +525,7 @@ def tsfeatures(
             ts,
             freq,
             features = [acf_features, arch_stat, crossing_points,
-                        entropy, flat_spots, heterogeneity, holt_parameters,
+                        flat_spots, heterogeneity, holt_parameters,
                         lumpiness, nonlinearity, pacf_features, stl_features,
                         stability, hw_parameters, unitroot_kpss, unitroot_pp,
                         series_length, hurst],
